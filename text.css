@@ -5,20 +5,23 @@
 }
 body{
     font-family: 'Noto Sans', sans-serif;
-    color: #2E2E7E;
-    /* background-color: #F7F7F7; */
 }
 body a:hover{
     color: #2E2E7E;
 }
+.container {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
 header{
     border-bottom: solid 1px #f1f1f1;
-    padding: 0px 50px;
 }
 nav .h1{
     font-weight: 500;
     font-size: 24px;
     line-height: 74px;
+    color: #2E2E7E;
 }
 nav  .menu-btn{
     font-size: 18px;
@@ -84,9 +87,36 @@ nav ul li > a > #arrow:before{
 nav ul li:hover > a > #arrow:before{
     content: "\f106";
 }
+/* Main Desiging Start from Here */
+    
+
+main .top .greeting{
+    padding: 10px;
+    margin: 0 25px;
+    text-align: center;
+}
+main .top .greeting h2{
+    font-size: 35px;
+    font-weight: 400;
+    margin: 0 0 20px;
+}
+main .top .greeting p{
+    font-size: 19px;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+
+
+
+
+
+
 @media(max-width: 840px){
     nav .menu-btn{
         display: block;
+    }
+    header{
+        padding: 0 auto;
     }
     nav  ul{
         width: 100%;
@@ -136,6 +166,19 @@ nav ul li:hover > a > #arrow:before{
     nav ul li:hover > .sub-menu{
         display: block;
     }
-    
+
+    /* Main Desiging Start from Here */
+
+    main .top .greeting{
+        margin: 0;
+    }
+    @media(max-width: 270px){
+        nav .h1{
+            line-height: 40px;
+        }
+        nav  .menu-btn i{
+            line-height: 40px;
+        }
+    }
 }
 
