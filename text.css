@@ -106,6 +106,57 @@ main .top .greeting p{
     margin: 0 0 10px;
 }
 
+/* footer designing on going */
+
+footer .small_container{
+    background: #1b1b1b;
+    padding: 10px 0;
+}
+footer .small_container .foot{
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+}
+footer .footer_nav{
+    float: right;
+}
+footer .footer_nav ul{
+    list-style: none;
+    display: inline-block;
+}
+footer .footer_nav ul li{
+    display: inline-block;
+} 
+footer .footer_nav ul li:after{
+    content: '|';
+    color: #ffffff;
+    margin: 0 5px;
+}
+footer .footer_nav ul li:last-child::after{
+    content: '';
+}
+footer .footer_nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+footer .footer_nav ul li a:hover{
+    transform: translateY(-5%);
+}
+footer .copyright{
+    display: inline-block;
+    color: #ffffff;
+}
+footer .copyright a{
+    text-decoration: none;
+    color: #ffffff;
+}
+footer .copyright a:hover{
+    color: red;
+}
+
+
+
+
 
 
 
@@ -179,6 +230,17 @@ main .top .greeting p{
         nav  .menu-btn i{
             line-height: 40px;
         }
+    }
+
+    /* footer design Started */
+
+    footer .foot{
+        text-align: center;
+    }
+
+    footer .footer_nav{
+        float: none;
+        margin-bottom: 15px;
     }
 }
 
