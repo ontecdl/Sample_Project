@@ -14,7 +14,7 @@ body a:hover{
     max-width: 90%;
     margin: 0 auto;
 }
-header{
+.header{
     border-bottom: solid 1px #f1f1f1;
 }
 nav .h1{
@@ -35,11 +35,13 @@ nav  .menu-btn i{
 }
 nav ul{
     float: right;
+    cursor: default;
 }
 nav  ul li{
     display: inline-block;
     padding: 0;
     margin: 0;
+    transition: transform 0.5s;
 }
 nav ul li a{
     line-height: 74px;
@@ -48,6 +50,9 @@ nav ul li a{
     text-decoration: none;
     padding: 0px 15px;
     font-size: 18px;
+}
+nav ul li:hover{
+    transform: translateY(-5%);
 }
 nav  #click{
     display: none;
@@ -115,7 +120,7 @@ footer .small_container{
 footer .small_container .foot{
     display: inline-block;
     width: 100%;
-    font-size: 14px;
+    font-size: 12px;
 }
 footer .footer_nav{
     float: right;
@@ -123,6 +128,7 @@ footer .footer_nav{
 footer .footer_nav ul{
     list-style: none;
     display: inline-block;
+    cursor: default;
 }
 footer .footer_nav ul li{
     display: inline-block;
@@ -139,9 +145,6 @@ footer .footer_nav ul li a{
     text-decoration: none;
     color: #ffffff;
 }
-footer .footer_nav ul li a:hover{
-    transform: translateY(-5%);
-}
 footer .copyright{
     display: inline-block;
     color: #ffffff;
@@ -154,9 +157,53 @@ footer .copyright a:hover{
     color: red;
 }
 
+/* header designing Started */
 
+header .top_bar{
+    background: #1b1b1b;
+    padding: 10px 0;
+}
+header .top_bar .head{
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+}
+header .top_bar .head .social_media{
+    float: right;
+}
+header .header_nav{
+    display: inline-block;
+}
+header ul{
+    list-style: none;
+    display: inline-block;
+    cursor: default;
+}
+header ul li{
+    display: inline-block;
+}
+header ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+header .header_nav ul li{
+    margin: 0 5px;
+}
+header .header_nav ul li a:hover{
+    color: red;
+}
 
-
+header .social_media ul li a i{
+    color: #ffffff;
+    font-size: 16px;
+    opacity: 60%;
+}
+header .social_media ul li a i:hover{
+    opacity: 100%;
+}
+header .social_media ul li a{
+    margin: 0 10px;
+}
 
 
 
@@ -166,7 +213,7 @@ footer .copyright a:hover{
     nav .menu-btn{
         display: block;
     }
-    header{
+    .header{
         padding: 0 auto;
     }
     nav  ul{
@@ -181,6 +228,9 @@ footer .copyright a:hover{
         width: 100%;
         background: #ffffff;
         border-bottom: solid 1px rgba(85, 85, 85, 0.06);
+    }
+    nav ul li:hover{
+        transform: none;
     }
     nav ul li a{
         line-height: 40px;
@@ -241,6 +291,23 @@ footer .copyright a:hover{
     footer .footer_nav{
         float: none;
         margin-bottom: 15px;
+    }
+
+    /* top header design started */
+
+    header .header_nav{
+        display: none;
+    }
+    header .top_bar .head .social_media{
+        float: none;
+    }
+    header .head{
+        text-align: center;
+    }
+    @media(max-width: 570px){
+        header{
+            display: none;
+        }
     }
 }
 
